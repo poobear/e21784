@@ -7,6 +7,8 @@ class Scores extends CI_Controller {
 		$this->load->helper('form');
 		$this->load->model('score');
 	}
+
+	// TODO: move to admin controller
 	function admin() {
 		$this->load->view('admin-score');
 	}

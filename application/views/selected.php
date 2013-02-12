@@ -2,6 +2,7 @@
 <html lang="en-US">
 <head>
 	<meta charset="UTF-8">
+	<!-- <?php //$this->load->view('header'); ?> --> 
 	<link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/css/bootstrap.css" media="all">
 	<script type="text/javascript" src="<?=base_url()?>assets/js/jquery-1.9.0.min.js"></script>
 	<script type="text/javascript" src="<?=base_url()?>assets/js/bootstrap.js"></script>
