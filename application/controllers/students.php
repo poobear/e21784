@@ -34,4 +34,36 @@ class Students Extends CI_Controller{
 		$this->session->sess_destroy();
 		redirect(base_url()."student/login");
 	}
+
+	// request student email
+	function email(){
+		//if user haven't login yet
+    	if(!$this->session->userdata("student_id")){
+    		redirect(base_url()."students/login");
+    	}
+
+		if($_POST){
+			// validate email
+			$this->load->helper('form');
+			$this->load->library('form_validation');
+			$this->form_validation->set_rules('email','Email','trim|required|valid_email|is_unique[students.email]');
+			if($this->form_validation->run() == TRUE){
+				$email = $this->input->post('email',true);
+				print_r('email');
+				//send mail
+				/*
+				$to      = 'nobody@example.com';
+				$subject = 'the subject';
+				$message = 'hello';
+				$headers = 'From: webmaster@example.com' . "\r\n" .
+				    'Reply-To: webmaster@example.com' . "\r\n" .
+				    'X-Mailer: PHP/' . phpversion();
+
+				mail($to, $subject, $message, $headers);*/
+				//$this->load->view('email_send');
+			}
+		}
+
+		$this->load->view('email');
+	}
 }

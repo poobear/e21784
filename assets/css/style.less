@@ -1,0 +1,149 @@
+.not-bold{
+	font-weight: normal;
+}
+body{
+	background-color: #f7f7f7;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+#login{
+	width: 400px;
+	margin: 20px auto;
+	text-align: left;
+	.form-horizontal .control-label{
+		width: 120px;
+	}
+	.form-horizontal .controls{
+		margin-left: 140px;
+	}
+}
+
+#header{
+	.dropdown{
+		float: right;
+		position: relative;
+		.btn{
+			position: absolute;
+			right: 0;
+			top: 5px;
+		}
+	}
+	background-color: #343434;
+	overflow: hidden;
+	.logo{
+		float: left;
+		img{
+			width: 80%;
+			margin: 15px;
+			margin-right: 0;
+		}
+	}
+	h1{
+		font-weight: normal;
+		color: #f4f4f4;
+		font-size: 22px;
+		margin-top: 12px;
+		line-height: 1.2em;
+	}
+	h2{
+		font-weight: normal;
+		color: #f4f4f4;
+		font-size: 16px;
+		margin: 12px 15px;
+		line-height: 1.7em;		
+	}
+}
+
+#sidebar{
+	padding-top: 15px;
+	float: left;
+	width: 200px;
+	.nav{
+		li{
+			border-bottom: 1px solid #ddd;
+		}
+		.current{
+			a{
+				color: #fff;
+				background-color: #e65454;
+			}
+		}
+		a{
+			padding: 8px 20px;
+			color: #4a4a4a;
+			i{
+				padding-right: 6px;
+			}
+		}
+	}
+}
+
+#content{
+	padding: 25px;
+	background-color: #fff;
+	margin-left: 200px;
+	border-left: 1px solid #ddd;
+}
+
+/* Desktop */
+@media (min-width: 979px) {
+	#content-wrapper{
+		margin-top: 52px;
+	}
+}
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+	#header{
+		margin: 0 -20px;
+		padding: 0 20px;
+		h2{
+			display: none;
+		}
+	}
+
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+	#header{
+		margin: 0 -20px;
+		padding: 0 20px;
+		h1,h2{
+			display: none;
+		}
+	}
+	#content{
+		margin: 0;
+		border: 0;
+	}
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
+#login{
+	width: auto;
+	.form-horizontal .control-label{
+		width: auto;
+	}
+	.form-horizontal .controls{
+		margin-left: auto;
+	}
+	input[type="text"],input[type="password"]{
+		width: auto;
+	}
+}
+#header{
+	.logo{
+		img{
+			margin: 10px 0;
+		}
+	}
+}
+
+}

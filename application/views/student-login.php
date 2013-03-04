@@ -12,11 +12,15 @@
 		<div class="row">
 			<div class="span6 offset3">
 				<div class="well">
-					<form action="<?=base_url()."students/login"?>" method="POST">
+					<form action="<?=base_url()."auth/login"?>" method="POST">
 						<legend>Login</legend>
 						<?php if($error == 1): ?>
 						<div class="alert">
 							<p>รหัสนิสิต และ/หรือ รหัสผ่าน ไม่ถูกต้อง</p>
+						</div>
+						<?php elseif($error == 2): ?>
+						<div class="alert">
+							<p>รหัสนิสิต และ/หรือ รหัสผ่าน ไม่ถูกต้อง2</p>
 						</div>
 						<?php endif; ?>
 						<label for="student_id">รหัสนิสิต</label>

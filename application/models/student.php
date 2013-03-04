@@ -1,17 +1,25 @@
 <?php
 
 class Student Extends CI_Model {
-	function login($student_id,$password){
-		$where = array('student_id' => $student_id,'password' => sha1($password));
-		$this->db->select()->from('students')->where($where);
-		$query = $this->db->get();
-		return $query->first_row('array');
-	}
 
 	function get_student($student_id){
 		$this->db->select()->from('students')->where('student_id',$student_id);
 		$query = $this->db->get();
 		return $query->first_row('array');
+	}
+
+	function is_unique_email($student_id,$email) {
+		$this->db->select()->from('students')->where('student_id !=',$student_id)->where('email',$email);
+		$query = $this->db->get();
+		return $query->num_rows();
+	}
+
+	function add_email($student_id,$email){
+		$this->db->where('student_id',$student_id)->update('students',array('email'=>$email));
+	}
+
+	function set_validated($student_id){
+		$this->db->where('student_id',$student_id)->update('students',array('validated'=>1));
 	}
 
 	// return 0 if student not found
