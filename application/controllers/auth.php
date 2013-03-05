@@ -24,7 +24,7 @@ class Auth extends CI_Controller{
 					$student = $this->student->get_student($student_id);
 					if($student){
 						$this->session->set_userdata('student_id',$student_id);
-						redirect(base_url()."validates");
+						//redirect(base_url()."validates");
 					} else { // not valid user
 						$data['error'] = 2;
 					}
@@ -84,11 +84,9 @@ class Auth extends CI_Controller{
 
 		$postFields = 'userid='. $username .'&password='. $password .'&programsystem=S&language=T';
 		$response = $this->httpPost('http://www.reg.chula.ac.th/servlet/com.dtm.chula.reg.servlet.LogonServlet', $postFields, '', true, 'https://www.reg.chula.ac.th/cu/reg/logon/logonPage.html');
-
 		if (preg_match('/StatusServlet/', $response)) {	// Success
 			if (preg_match_all('/Set-Cookie: ([^;]+)/', $response, $regs, PREG_OFFSET_CAPTURE)) 
 				$cookieFields = $regs[1][0][0] .'; '. $regs[1][1][0] .';';
-
 			return $cookieFields;
 		} else {
 			return false;

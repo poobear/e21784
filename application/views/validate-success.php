@@ -3,7 +3,7 @@
 <head>
 	<title>Validation Sent</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<META http-equiv="Refresh" content="5;URL=login.html">
+	<META http-equiv="Refresh" content="5;URL=<?=base_url()?>">
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="<?=base_url()?>assets/css/style.css">
 	<link rel="stylesheet/less" type="text/css" href="<?=base_url()?>assets/css/style.less" />
@@ -12,7 +12,7 @@
 <body>
 <div class="text-center">
 	<br><br>
-	<a href="index.html"><img src="img/logo.png" alt=""></a>
+	<a href="index.html"><img src="<?=base_url()?>assets/img/logo.png" alt=""></a>
 	<div id="login" class="well">
 		<form class="text-center form-horizontal">
 			<legend>ยืนยันอีเมล <?=$email?> เรียบร้อยแล้ว</legend>

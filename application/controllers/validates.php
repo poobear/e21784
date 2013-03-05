@@ -6,6 +6,7 @@ class validates extends CI_Controller {
 		parent::__construct();
 		$this->load->model('student');
 	}
+
 	function index(){
 		if(!$this->session->userdata('student_id'))
 			redirect(base_url()."auth");
@@ -35,13 +36,14 @@ class validates extends CI_Controller {
 
 	function link($student_id,$key){
 		$data = array();
-		if(empty($student_id) || !empty($key)){
+		//echo $student_id." ".$key;
+		if(empty($student_id) || empty($key)){
 			redirect(base_url());
 		}
 		$student = $this->student->get_student($student_id);
-		if($key == $this->key_hash($student_id,$name_en,$email)){
+		if($key == $this->key_hash($student_id,$student['name_en'],$student['email'])){
 			$data['email'] = $student['email'];
-			$this->student->validated($student_id);
+			$this->student->set_validated($student_id);
 			$this->load->view('validate-success',$data);
 		} else {
 			redirect(base_url());
