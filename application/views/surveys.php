@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Homepage</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="<?=base_url()?>css/style.css">
+	<link rel="stylesheet/less" type="text/css" href="<?=base_url()?>css/style.less" />
+	<script src="<?=base_url()?>js/less-1.3.3.min.js" type="text/javascript"></script>
+	<script src="<?=base_url()?>js/jquery-1.9.1.min.js" type="text/javascript"></script>
+	<script src="<?=base_url()?>js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="<?=base_url()?>js/jquery-ui.js" type="text/javascript"></script>
+	<script>
+	$(function(){
+		$('.btn').click(function(){
+			$(this).siblings().removeClass("btn-info");
+			$(this).addClass("btn-info");
+			var text = $(this).html();
+			$(this).parent().siblings('.num').attr('value',text);
+		});
+	});
+	</script>
+</head>
+<body class="full">
+	<div id="header" class="clearfix navbar-fixed-top">
+		<div class="ctn">
+			<div class="logo">
+				<a href=""><img src="<?=base_url()?>img/logo-black2.png" alt=""></a>
+			</div>
+			<h1 class="left">ระบบเลือกภาคนิสิตคณะวิศวกรรมศาสตร์ ปีการศึกษา 2555</h1>
+			<h2 class="right">4 มีนาคม 2556 - 13:30 น. <i class="icon-time"></i> </h2>
+		</div>
+	</div>
+	<div class="ctn" id="content-wrapper">
+		<div id="sidebar" class="affix hidden-phone" data-spy="affix" data-offset-top="0">
+			<aside>
+				<ul class="nav">
+					<li><a href=""><i class="icon-home"></i> หน้าหลัก</a></li>
+					<li class="current"><a href=""><i class="icon-edit"></i> แบบสอบถาม</a></li>
+					<li><a href=""><i class="icon-user"></i> อันดับ (Rank)</a></li>
+					<li><a href=""><i class="icon-reorder"></i> เลือกภาควิชา</a></li>
+					<li><a href=""><i class="icon-ok"></i> ผลการเลือกภาควิชา</a></li>
+					<li><a href=""><i class="icon-off"></i> ออกจากระบบ</a></li>
+				</ul>
+			</aside>
+		</div>
+		<div id="sidebar-phone" class="visible-phone">
+			<aside>
+				<ul class="nav nav-tabs nav-stacked ">
+					<li class="current"><a href=""><i class="icon-home"></i> หน้าหลัก</a></li>
+					<li><a href=""><i class="icon-edit"></i> แบบสอบถาม</a></li>
+					<li><a href=""><i class="icon-user"></i> อันดับ (Rank)</a></li>
+					<li><a href=""><i class="icon-reorder"></i> เลือกภาควิชา</a></li>
+					<li><a href=""><i class="icon-ok"></i> ผลการเลือกภาควิชา</a></li>
+					<li><a href=""><i class="icon-off"></i> ออกจากระบบ</a></li>
+				</ul>
+			</aside>
+		</div>
+		<div id="content" class="clearfix">
+			<h1><i class="icon-edit"></i> แบบสอบถาม</h1>
+			<div class="alert alert-error">
+				<i class="icon-warning-sign"></i> &nbsp; error
+			</div>
+			<form class="form-horizontal survey">
+				<table class="table">
+					<tr>
+						<td width="50%" class="text-right">เพศ</td>
+						<td>
+							<label class="radio"><input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"> ชาย</label>
+							<label class="radio"><input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"> หญิง</label>
+						</td>
+					</tr>
+					<tr>
+						<td width="50%" class="text-right">นิสิตสามารถพบอาจารย์ที่ปรึกษาได้สะดวกเพียงไร</td>
+						<td>
+							<label class="radio"><input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"> มาก</label>
+							<label class="radio"><input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"> ปานกลาง</label>
+							<label class="radio"><input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"> น้อย</label>
+						</td>
+					</tr>
+					<tr>
+						<td width="50%" class="text-right">นิสิตเคยได้รับคำปรึกษาจากอาจารย์ที่ปรึกษาโดยเฉลี่ยภาคการศึกษาละ</td>
+						<td>
+							<label class="radio"><input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"> 1 ครั้ง</label>
+							<label class="radio"><input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"> 2 ครั้ง</label>
+							<label class="radio"><input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"> 3 ครั้ง</label>
+							<label class="radio"><input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"> 4 ครั้งหรือมากกว่า</label>
+							<label class="radio"><input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"> ไม่เคย</label>
+						</td>
+					</tr>
+					<tr>
+						<td width="50%" class="text-right">นิสิตทราบหมายเลขโทรศัพท์ของอาจารย์ที่ปรึกษา</td>
+						<td>
+							<label class="radio"><input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"> ทราบ</label>
+							<label class="radio"><input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"> ไม่ทราบ</label>
+						</td>
+					</tr>
+					<tr>
+						<td width="50%" class="text-right">นิสิตคิดว่าระบบอาจารย์ที่ปรึกษามีความสัมคัญ</td>
+						<td>
+							<label class="radio"><input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"> มาก</label>
+							<label class="radio"><input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"> ปานกลาง</label>
+							<label class="radio"><input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"> น้อย</label>
+						</td>
+					</tr>
+					<tr>
+						<td width="50%" class="text-right">ปัญหาและข้อเสนอแนะอื่นๆ</td>
+						<td>
+							<textarea name="" id="" cols="20" rows="5"></textarea>
+						</td>
+					</tr>
+				</table>
+				<table class="table" class="text-center">
+					<thead>
+						<tr>
+							<th width="40%" class="text-right"><strong>นิสิตขอคำแนะนำอาจารย์ที่ปรึกษาในเรื่องต่อไปนี้ในระดับใด</strong></th>
+							<th width="30%" class="text-center">จนถึงปัจจุบัน (5 คือมากที่สุด)</th>
+							<th width="30%" class="text-center">คาดหวังในอนาคต (5 คือมากที่สุด)</th>
+						</tr>
+					</thead>
+					<tr>
+						<td width="40%" class="text-right">การเรียนตามหลักสูตร</td>
+						<td width="30%">
+							<div class="q1">
+								<div class="btn-group" data-toggle="buttons-radio">
+									<button type="button" class="btn">5</button>
+									<button type="button" class="btn">4</button>
+									<button type="button" class="btn">3</button>
+									<button type="button" class="btn">2</button>
+									<button type="button" class="btn">1</button>
+									<button type="button" class="btn">0</button>
+								</div>
+								<input type="text" class="num">
+							</div>
+						</td>
+						<td width="30%">
+							<div class="q1">
+								<div class="btn-group" data-toggle="buttons-radio">
+									<button type="button" class="btn">5</button>
+									<button type="button" class="btn">4</button>
+									<button type="button" class="btn">3</button>
+									<button type="button" class="btn">2</button>
+									<button type="button" class="btn">1</button>
+									<button type="button" class="btn">0</button>
+								</div>
+								<input type="text" class="num">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="40%" class="text-right">การเรียนตามหลักสูตร</td>
+						<td width="30%">
+							<div class="q1">
+								<div class="btn-group" data-toggle="buttons-radio">
+									<button type="button" class="btn">5</button>
+									<button type="button" class="btn">4</button>
+									<button type="button" class="btn">3</button>
+									<button type="button" class="btn">2</button>
+									<button type="button" class="btn">1</button>
+									<button type="button" class="btn">0</button>
+								</div>
+								<input type="text" class="num">
+							</div>
+						</td>
+						<td width="30%">
+							<div class="q1">
+								<div class="btn-group" data-toggle="buttons-radio">
+									<button type="button" class="btn">5</button>
+									<button type="button" class="btn">4</button>
+									<button type="button" class="btn">3</button>
+									<button type="button" class="btn">2</button>
+									<button type="button" class="btn">1</button>
+									<button type="button" class="btn">0</button>
+								</div>
+								<input type="text" class="num">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="40%" class="text-right">การเรียนตามหลักสูตร</td>
+						<td width="30%">
+							<div class="q1">
+								<div class="btn-group" data-toggle="buttons-radio">
+									<button type="button" class="btn">5</button>
+									<button type="button" class="btn">4</button>
+									<button type="button" class="btn">3</button>
+									<button type="button" class="btn">2</button>
+									<button type="button" class="btn">1</button>
+									<button type="button" class="btn">0</button>
+								</div>
+								<input type="text" class="num">
+							</div>
+						</td>
+						<td width="30%">
+							<div class="q1">
+								<div class="btn-group" data-toggle="buttons-radio">
+									<button type="button" class="btn">5</button>
+									<button type="button" class="btn">4</button>
+									<button type="button" class="btn">3</button>
+									<button type="button" class="btn">2</button>
+									<button type="button" class="btn">1</button>
+									<button type="button" class="btn">0</button>
+								</div>
+								<input type="text" class="num">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="40%" class="text-right">การเรียนตามหลักสูตร</td>
+						<td width="30%">
+							<div class="q1">
+								<div class="btn-group" data-toggle="buttons-radio">
+									<button type="button" class="btn">5</button>
+									<button type="button" class="btn">4</button>
+									<button type="button" class="btn">3</button>
+									<button type="button" class="btn">2</button>
+									<button type="button" class="btn">1</button>
+									<button type="button" class="btn">0</button>
+								</div>
+								<input type="text" class="num">
+							</div>
+						</td>
+						<td width="30%">
+							<div class="q1">
+								<div class="btn-group" data-toggle="buttons-radio">
+									<button type="button" class="btn">5</button>
+									<button type="button" class="btn">4</button>
+									<button type="button" class="btn">3</button>
+									<button type="button" class="btn">2</button>
+									<button type="button" class="btn">1</button>
+									<button type="button" class="btn">0</button>
+								</div>
+								<input type="text" class="num">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="40%" class="text-right">การเรียนตามหลักสูตร</td>
+						<td width="30%">
+							<div class="q1">
+								<div class="btn-group" data-toggle="buttons-radio">
+									<button type="button" class="btn">5</button>
+									<button type="button" class="btn">4</button>
+									<button type="button" class="btn">3</button>
+									<button type="button" class="btn">2</button>
+									<button type="button" class="btn">1</button>
+									<button type="button" class="btn">0</button>
+								</div>
+								<input type="text" class="num">
+							</div>
+						</td>
+						<td width="30%">
+							<div class="q1">
+								<div class="btn-group" data-toggle="buttons-radio">
+									<button type="button" class="btn">5</button>
+									<button type="button" class="btn">4</button>
+									<button type="button" class="btn">3</button>
+									<button type="button" class="btn">2</button>
+									<button type="button" class="btn">1</button>
+									<button type="button" class="btn">0</button>
+								</div>
+								<input type="text" class="num">
+							</div>
+						</td>
+					</tr>
+				</table>
+				<div class="text-center">
+					<button type="submit" class="btn btn-danger btn-large">ตกลง</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
