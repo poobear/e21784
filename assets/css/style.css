@@ -2,3 +2,11 @@
 @import url(bootstrap-responsive.min.css);
 @import url(font-awesome.min.css);
 @import url(font-awesome-ie7.min.css);
+@import url(jquery-ui.css);
+@font-face {
+	font-family: 'RSU_BOLD';
+	src: url('../font/RSU_BOLD.eot');
+	src: local('☺'), url('../font/RSU_BOLD.woff') format('woff'), url('../font/RSU_BOLD.ttf') format('truetype'), url('../font/RSU_BOLD.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

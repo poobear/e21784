@@ -4,12 +4,12 @@
 	<title>Homepage</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="<?=base_url()?>css/style.css">
-	<link rel="stylesheet/less" type="text/css" href="<?=base_url()?>css/style.less" />
-	<script src="<?=base_url()?>js/less-1.3.3.min.js" type="text/javascript"></script>
-	<script src="<?=base_url()?>js/jquery-1.9.1.min.js" type="text/javascript"></script>
-	<script src="<?=base_url()?>js/bootstrap.min.js" type="text/javascript"></script>
-	<script src="<?=base_url()?>js/jquery-ui.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="<?=base_url()?>assets/css/style.css">
+	<link rel="stylesheet/less" type="text/css" href="<?=base_url()?>assets/css/style.less" />
+	<script src="<?=base_url()?>assets/js/less-1.3.3.min.js" type="text/javascript"></script>
+	<script src="<?=base_url()?>assets/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+	<script src="<?=base_url()?>assets/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="<?=base_url()?>assets/js/jquery-ui.js" type="text/javascript"></script>
 	<script>
 	$(function(){
 		$('.btn').click(function(){
@@ -25,7 +25,7 @@
 	<div id="header" class="clearfix navbar-fixed-top">
 		<div class="ctn">
 			<div class="logo">
-				<a href=""><img src="<?=base_url()?>img/logo-black2.png" alt=""></a>
+				<a href=""><img src="<?=base_url()?>assets/img/logo-black2.png" alt=""></a>
 			</div>
 			<h1 class="left">ระบบเลือกภาคนิสิตคณะวิศวกรรมศาสตร์ ปีการศึกษา 2555</h1>
 			<h2 class="right">4 มีนาคม 2556 - 13:30 น. <i class="icon-time"></i> </h2>
