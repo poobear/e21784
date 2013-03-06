@@ -1,5 +1,5 @@
 <?php
-
+// TODO: Fix to current schema
 class Score extends CI_Model {
 
 	function get_score($student_id,$course_id) {
