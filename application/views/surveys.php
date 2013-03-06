@@ -66,47 +66,47 @@
 					<tr>
 						<td width="50%" class="text-right">เพศ</td>
 						<td>
-							<label class="radio"><input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"> ชาย</label>
-							<label class="radio"><input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"> หญิง</label>
+							<label class="radio"><input type="radio" name="q1" id="optionsRadios1" value="ชาย"> ชาย</label>
+							<label class="radio"><input type="radio" name="q1" id="optionsRadios2" value="หญิง"> หญิง</label>
 						</td>
 					</tr>
 					<tr>
 						<td width="50%" class="text-right">นิสิตสามารถพบอาจารย์ที่ปรึกษาได้สะดวกเพียงไร</td>
 						<td>
-							<label class="radio"><input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"> มาก</label>
-							<label class="radio"><input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"> ปานกลาง</label>
-							<label class="radio"><input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"> น้อย</label>
+							<label class="radio"><input type="radio" name="q2" id="optionsRadios1" value="มาก"> มาก</label>
+							<label class="radio"><input type="radio" name="q2" id="optionsRadios2" value="ปานกลาง"> ปานกลาง</label>
+							<label class="radio"><input type="radio" name="q2" id="optionsRadios2" value="น้อย"> น้อย</label>
 						</td>
 					</tr>
 					<tr>
 						<td width="50%" class="text-right">นิสิตเคยได้รับคำปรึกษาจากอาจารย์ที่ปรึกษาโดยเฉลี่ยภาคการศึกษาละ</td>
 						<td>
-							<label class="radio"><input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"> 1 ครั้ง</label>
-							<label class="radio"><input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"> 2 ครั้ง</label>
-							<label class="radio"><input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"> 3 ครั้ง</label>
-							<label class="radio"><input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"> 4 ครั้งหรือมากกว่า</label>
-							<label class="radio"><input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"> ไม่เคย</label>
+							<label class="radio"><input type="radio" name="q3" id="optionsRadios1" value="1 ครั้ง"> 1 ครั้ง</label>
+							<label class="radio"><input type="radio" name="q3" id="optionsRadios2" value="2 ครั้ง"> 2 ครั้ง</label>
+							<label class="radio"><input type="radio" name="q3" id="optionsRadios2" value="3 ครั้ง"> 3 ครั้ง</label>
+							<label class="radio"><input type="radio" name="q3" id="optionsRadios2" value="4 ครั้งหรือมากกว่า"> 4 ครั้งหรือมากกว่า</label>
+							<label class="radio"><input type="radio" name="q3" id="optionsRadios2" value="ไม่เคย"> ไม่เคย</label>
 						</td>
 					</tr>
 					<tr>
 						<td width="50%" class="text-right">นิสิตทราบหมายเลขโทรศัพท์ของอาจารย์ที่ปรึกษา</td>
 						<td>
-							<label class="radio"><input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"> ทราบ</label>
-							<label class="radio"><input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"> ไม่ทราบ</label>
+							<label class="radio"><input type="radio" name="q4" id="optionsRadios1" value="ทราบ"> ทราบ</label>
+							<label class="radio"><input type="radio" name="q4" id="optionsRadios2" value="ไม่ทราบ"> ไม่ทราบ</label>
 						</td>
 					</tr>
 					<tr>
 						<td width="50%" class="text-right">นิสิตคิดว่าระบบอาจารย์ที่ปรึกษามีความสัมคัญ</td>
 						<td>
-							<label class="radio"><input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"> มาก</label>
-							<label class="radio"><input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"> ปานกลาง</label>
-							<label class="radio"><input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"> น้อย</label>
+							<label class="radio"><input type="radio" name="q5" id="optionsRadios1" value="มาก"> มาก</label>
+							<label class="radio"><input type="radio" name="q5" id="optionsRadios2" value="าปนกลาง"> ปานกลาง</label>
+							<label class="radio"><input type="radio" name="q5" id="optionsRadios2" value="น้อย"> น้อย</label>
 						</td>
 					</tr>
 					<tr>
 						<td width="50%" class="text-right">ปัญหาและข้อเสนอแนะอื่นๆ</td>
 						<td>
-							<textarea name="" id="" cols="20" rows="5"></textarea>
+							<textarea name="q6" id="" cols="20" rows="5"></textarea>
 						</td>
 					</tr>
 				</table>
@@ -130,7 +130,7 @@
 									<button type="button" class="btn">1</button>
 									<button type="button" class="btn">0</button>
 								</div>
-								<input type="text" class="num">
+								<input type="text" name="q7" class="num">
 							</div>
 						</td>
 						<td width="30%">
@@ -143,41 +143,12 @@
 									<button type="button" class="btn">1</button>
 									<button type="button" class="btn">0</button>
 								</div>
-								<input type="text" class="num">
-							</div>
-						</td>
-					</tr>
-					<tr>
-						<td width="40%" class="text-right">การเรียนตามหลักสูตร</td>
-						<td width="30%">
-							<div class="q1">
-								<div class="btn-group" data-toggle="buttons-radio">
-									<button type="button" class="btn">5</button>
-									<button type="button" class="btn">4</button>
-									<button type="button" class="btn">3</button>
-									<button type="button" class="btn">2</button>
-									<button type="button" class="btn">1</button>
-									<button type="button" class="btn">0</button>
-								</div>
-								<input type="text" class="num">
-							</div>
-						</td>
-						<td width="30%">
-							<div class="q1">
-								<div class="btn-group" data-toggle="buttons-radio">
-									<button type="button" class="btn">5</button>
-									<button type="button" class="btn">4</button>
-									<button type="button" class="btn">3</button>
-									<button type="button" class="btn">2</button>
-									<button type="button" class="btn">1</button>
-									<button type="button" class="btn">0</button>
-								</div>
-								<input type="text" class="num">
+								<input type="text" name="q8" class="num">
 							</div>
 						</td>
 					</tr>
 					<tr>
-						<td width="40%" class="text-right">การเรียนตามหลักสูตร</td>
+						<td width="40%" class="text-right">ปัญหาการเรียน</td>
 						<td width="30%">
 							<div class="q1">
 								<div class="btn-group" data-toggle="buttons-radio">
@@ -188,7 +159,7 @@
 									<button type="button" class="btn">1</button>
 									<button type="button" class="btn">0</button>
 								</div>
-								<input type="text" class="num">
+								<input type="text" name="q9" class="num">
 							</div>
 						</td>
 						<td width="30%">
@@ -201,41 +172,12 @@
 									<button type="button" class="btn">1</button>
 									<button type="button" class="btn">0</button>
 								</div>
-								<input type="text" class="num">
-							</div>
-						</td>
-					</tr>
-					<tr>
-						<td width="40%" class="text-right">การเรียนตามหลักสูตร</td>
-						<td width="30%">
-							<div class="q1">
-								<div class="btn-group" data-toggle="buttons-radio">
-									<button type="button" class="btn">5</button>
-									<button type="button" class="btn">4</button>
-									<button type="button" class="btn">3</button>
-									<button type="button" class="btn">2</button>
-									<button type="button" class="btn">1</button>
-									<button type="button" class="btn">0</button>
-								</div>
-								<input type="text" class="num">
-							</div>
-						</td>
-						<td width="30%">
-							<div class="q1">
-								<div class="btn-group" data-toggle="buttons-radio">
-									<button type="button" class="btn">5</button>
-									<button type="button" class="btn">4</button>
-									<button type="button" class="btn">3</button>
-									<button type="button" class="btn">2</button>
-									<button type="button" class="btn">1</button>
-									<button type="button" class="btn">0</button>
-								</div>
-								<input type="text" class="num">
+								<input type="text" name="q10" class="num">
 							</div>
 						</td>
 					</tr>
 					<tr>
-						<td width="40%" class="text-right">การเรียนตามหลักสูตร</td>
+						<td width="40%" class="text-right">รับรองการขอทุน/สมัครโครงการต่างๆ</td>
 						<td width="30%">
 							<div class="q1">
 								<div class="btn-group" data-toggle="buttons-radio">
@@ -246,7 +188,7 @@
 									<button type="button" class="btn">1</button>
 									<button type="button" class="btn">0</button>
 								</div>
-								<input type="text" class="num">
+								<input type="text" name="q11" class="num">
 							</div>
 						</td>
 						<td width="30%">
@@ -259,7 +201,132 @@
 									<button type="button" class="btn">1</button>
 									<button type="button" class="btn">0</button>
 								</div>
-								<input type="text" class="num">
+								<input type="text" name="q12" class="num">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="40%" class="text-right">ปัญหาชีวิต/ครอบครัว/การเงิน</td>
+						<td width="30%">
+							<div class="q1">
+								<div class="btn-group" data-toggle="buttons-radio">
+									<button type="button" class="btn">5</button>
+									<button type="button" class="btn">4</button>
+									<button type="button" class="btn">3</button>
+									<button type="button" class="btn">2</button>
+									<button type="button" class="btn">1</button>
+									<button type="button" class="btn">0</button>
+								</div>
+								<input type="text" name="q13" class="num">
+							</div>
+						</td>
+						<td width="30%">
+							<div class="q1">
+								<div class="btn-group" data-toggle="buttons-radio">
+									<button type="button" class="btn">5</button>
+									<button type="button" class="btn">4</button>
+									<button type="button" class="btn">3</button>
+									<button type="button" class="btn">2</button>
+									<button type="button" class="btn">1</button>
+									<button type="button" class="btn">0</button>
+								</div>
+								<input type="text" name="q14" class="num">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="40%" class="text-right">การพัฒนาคุณภาพชีวิต</td>
+						<td width="30%">
+							<div class="q1">
+								<div class="btn-group" data-toggle="buttons-radio">
+									<button type="button" class="btn">5</button>
+									<button type="button" class="btn">4</button>
+									<button type="button" class="btn">3</button>
+									<button type="button" class="btn">2</button>
+									<button type="button" class="btn">1</button>
+									<button type="button" class="btn">0</button>
+								</div>
+								<input type="text" name="q15" class="num">
+							</div>
+						</td>
+						<td width="30%">
+							<div class="q1">
+								<div class="btn-group" data-toggle="buttons-radio">
+									<button type="button" class="btn">5</button>
+									<button type="button" class="btn">4</button>
+									<button type="button" class="btn">3</button>
+									<button type="button" class="btn">2</button>
+									<button type="button" class="btn">1</button>
+									<button type="button" class="btn">0</button>
+								</div>
+								<input type="text" name="q16" class="num">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="40%" class="text-right">การพัฒนาการเรียน</td>
+						<td width="30%">
+							<div class="q1">
+								<div class="btn-group" data-toggle="buttons-radio">
+									<button type="button" class="btn">5</button>
+									<button type="button" class="btn">4</button>
+									<button type="button" class="btn">3</button>
+									<button type="button" class="btn">2</button>
+									<button type="button" class="btn">1</button>
+									<button type="button" class="btn">0</button>
+								</div>
+								<input type="text" name="q17" class="num">
+							</div>
+						</td>
+						<td width="30%">
+							<div class="q1">
+								<div class="btn-group" data-toggle="buttons-radio">
+									<button type="button" class="btn">5</button>
+									<button type="button" class="btn">4</button>
+									<button type="button" class="btn">3</button>
+									<button type="button" class="btn">2</button>
+									<button type="button" class="btn">1</button>
+									<button type="button" class="btn">0</button>
+								</div>
+								<input type="text" name="q18" class="num">
+							</div>
+						</td>
+					</tr>
+				</table>
+				<table class="table" class="text-center">
+					<thead>
+						<tr>
+							<th width="40%" class="text-right"><strong>ความสัมพันธ์ของนิสิตกับอาจารย์ที่ปรึกษาอยู่ในระดับใด</strong></th>
+							<th width="30%" class="text-center">จนถึงปัจจุบัน (5 คือมากที่สุด)</th>
+							<th width="30%" class="text-center">คาดหวังในอนาคต (5 คือมากที่สุด)</th>
+						</tr>
+					</thead>
+					<tr>
+						<td width="40%" class="text-right"></td>
+						<td width="30%">
+							<div class="q1">
+								<div class="btn-group" data-toggle="buttons-radio">
+									<button type="button" class="btn">5</button>
+									<button type="button" class="btn">4</button>
+									<button type="button" class="btn">3</button>
+									<button type="button" class="btn">2</button>
+									<button type="button" class="btn">1</button>
+									<button type="button" class="btn">0</button>
+								</div>
+								<input type="text" name="q19" class="num">
+							</div>
+						</td>
+						<td width="30%">
+							<div class="q1">
+								<div class="btn-group" data-toggle="buttons-radio">
+									<button type="button" class="btn">5</button>
+									<button type="button" class="btn">4</button>
+									<button type="button" class="btn">3</button>
+									<button type="button" class="btn">2</button>
+									<button type="button" class="btn">1</button>
+									<button type="button" class="btn">0</button>
+								</div>
+								<input type="text" name="q20" class="num">
 							</div>
 						</td>
 					</tr>
